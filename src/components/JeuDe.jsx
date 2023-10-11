@@ -28,11 +28,11 @@ export default class JeuDe extends Component {
 
     render() {
         return (
-            <div>
+            <div className='jeu'>
                 <img src={require('../images/jeude.jpeg')} alt='logo de'/>
                 <h1>Jeu de Dé</h1>
                 <h2>face: {this.state.face} </h2>
-                <img src={this.getImage()} alt='face' />
+                <img className='imgface' src={this.getImage()} alt='face' />
 
                 <h2>nombre d'essais : {this.state.compteur}</h2>
                 {!this.state.fin ? 
